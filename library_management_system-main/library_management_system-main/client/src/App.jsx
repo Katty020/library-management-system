@@ -49,7 +49,7 @@ function App() {
   const handleLogout = async () => {
     try {
       await axios.get("/logout", {
-        withCredentials: true, // Ensure credentials are included in the request
+        withCredentials: true, // Ensure credentials 
       });
   
       // Clear the user data in localStorage or state
