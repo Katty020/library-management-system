@@ -9,7 +9,7 @@ const libraryTransactionController = {
         const transactions = await LibraryTransaction.find().populate('user').populate('book');
         res.json(transactions);
       } else if (req.user.role === "user") {
-        // If the user is a regular user, fetch transactions of that particular user
+        // If the user is a regular user, fetch transactions of particular user
         const transactions = await LibraryTransaction.find({ user: req.user._id }).populate('user').populate('book');
         res.json(transactions);
       }
