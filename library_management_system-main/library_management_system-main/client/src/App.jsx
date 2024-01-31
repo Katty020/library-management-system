@@ -30,7 +30,7 @@ function App() {
       const response = await loginAPI(username, password);
       localStorage.setItem("user", JSON.stringify(response.user));
       setUser(response.user);
-      navigate('/'); // Redirect to the home page on successful login
+      navigate('/'); // Redirect to the home page if successful login 
       
     } catch (error) {
       toast.error("Invalid username or password!", {
