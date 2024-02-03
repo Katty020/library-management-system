@@ -77,6 +77,12 @@ function App() {
   // Conditional rendering based on user authentication status
   if (!user) {
     return (
+      //  <Routes>
+      //   <Route path="/signin" element={<Navigate to="/" />} />
+      //   <Route path="/signup" element={<Navigate to="/" />} />
+      //   <Route path="/" element={<Library user={user} onLogout={handleLogout} />} />
+      //   <Route path="/transactions" element={<Transactions user={user} onLogout={handleLogout} />} />
+      // </Routes>
       <Routes>
         <Route path="/signin" element={<SignIn onLogin={handleLogin} />} />
         <Route path="/signup" element={<SignUp />} />
