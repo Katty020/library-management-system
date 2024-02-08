@@ -5,7 +5,7 @@ const libraryTransactionController = {
   getAllTransactions: async (req, res) => {
     try {
       if (req.user.role === "admin") {
-        // If the user is an admin, fetch all transactions
+        // If the user is an admin, fetch all transa.
         const transactions = await LibraryTransaction.find().populate('user').populate('book');
         res.json(transactions);
       } else if (req.user.role === "user") {
