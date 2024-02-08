@@ -8,7 +8,7 @@ export const loginAPI = async (username, password) => {
       username,
       password,
     }, {
-      withCredentials: true, // Ensure credentials are included in the request
+      withCredentials: true, // Ensure credentials are included in  request
     });
 
     // Extract and handle the received cookie if needed
