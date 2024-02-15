@@ -14,7 +14,6 @@ const isLoggedIn = (req, res, next) => {
   const hasPermission = (roles) => {
     return (req, res, next) => {
       if (roles.includes(req.user.role)) {
-        // User has the required role, allow access
         next();
       } else {
         return res.status(403).json({ message: 'Access Denied' });
