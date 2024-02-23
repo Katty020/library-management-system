@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-//to revert all transaction
+//to revert all transactions
 const libraryTransactionSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
